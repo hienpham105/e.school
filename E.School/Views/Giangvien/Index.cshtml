@@ -1,0 +1,124 @@
+﻿@model IEnumerable<E.School.Models.GIANGVIEN>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.HOGV)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TENGV)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QUEQUAN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ANHDAIDIEN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NGAYSINH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CMND)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMAIL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SDT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DIACHI)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GIOITINH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MOTA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRANGTHAIGV)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CHUCVU.TENCV)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CHUYENNGANH.TENCN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DONVI.TENDV)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HOCVI.TENHV)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.HOGV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TENGV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QUEQUAN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ANHDAIDIEN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NGAYSINH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CMND)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMAIL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SDT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DIACHI)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GIOITINH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MOTA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRANGTHAIGV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CHUCVU.TENCV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CHUYENNGANH.TENCN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DONVI.TENDV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HOCVI.TENHV)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MAGV }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MAGV }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MAGV })
+        </td>
+    </tr>
+}
+
+</table>

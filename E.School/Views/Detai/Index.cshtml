@@ -1,0 +1,64 @@
+﻿@model IEnumerable<E.School.Models.DETAI>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TENDT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MOTADT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NGUOIDENGHIDT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRANGTHAIDT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NGAYDTHIEULUC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LOAIDT.TENLDT)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TENDT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MOTADT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NGUOIDENGHIDT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRANGTHAIDT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NGAYDTHIEULUC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LOAIDT.TENLDT)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MADT }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MADT }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MADT })
+        </td>
+    </tr>
+}
+
+</table>

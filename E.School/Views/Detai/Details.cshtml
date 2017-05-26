@@ -1,0 +1,67 @@
+﻿@model E.School.Models.DETAI
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DETAI</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TENDT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TENDT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MOTADT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MOTADT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NGUOIDENGHIDT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NGUOIDENGHIDT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRANGTHAIDT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRANGTHAIDT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NGAYDTHIEULUC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NGAYDTHIEULUC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LOAIDT.TENLDT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LOAIDT.TENLDT)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MADT }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

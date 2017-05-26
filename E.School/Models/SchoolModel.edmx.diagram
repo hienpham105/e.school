@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e8f0298dbae34cc4a60c258970aab4de" Name="Diagram1">
+        <EntityTypeShape EntityType="SCHOOLMANAGEMENTModel.CHUCVU" Width="1.5" PointX="6" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SCHOOLMANAGEMENTModel.CHUYENNGANH" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SCHOOLMANAGEMENTModel.CHUYENNGANH_MONHOC" Width="1.5" PointX="5.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="SCHOOLMANAGEMENTModel.CT_PHIEU_TD" Width="1.5" PointX="15" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SCHOOLMANAGEMENTModel.DETAI" Width="1.5" PointX="8.25" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SCHOOLMANAGEMENTModel.DONVI" Width="1.5" PointX="6" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SCHOOLMANAGEMENTModel.GIANGVIEN" Width="1.5" PointX="8.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SCHOOLMANAGEMENTModel.HOCVI" Width="1.5" PointX="6" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SCHOOLMANAGEMENTModel.KHOA" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SCHOOLMANAGEMENTModel.LOAIDT" Width="1.5" PointX="6" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SCHOOLMANAGEMENTModel.MONHOC" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SCHOOLMANAGEMENTModel.PCD_TIEUCHI" Width="1.5" PointX="12.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SCHOOLMANAGEMENTModel.PHIEU_CHAM_DIEM" Width="1.5" PointX="10.5" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SCHOOLMANAGEMENTModel.PHIEUGIAODT" Width="1.5" PointX="10.5" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SCHOOLMANAGEMENTModel.PHIEUTHEODOI" Width="1.5" PointX="12.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SCHOOLMANAGEMENTModel.SINHVIEN" Width="1.5" PointX="5.25" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SCHOOLMANAGEMENTModel.TIEUCHI" Width="1.5" PointX="10.5" PointY="4" IsExpanded="true" />
+        <AssociationConnector Association="SCHOOLMANAGEMENTModel.FK_GIANGVIEN_CHUCVU" ManuallyRouted="false" />
+        <AssociationConnector Association="SCHOOLMANAGEMENTModel.FK_CHUYENNGANH_KHOA" ManuallyRouted="false" />
+        <AssociationConnector Association="SCHOOLMANAGEMENTModel.FK_CHUYENNGANH_MONHOC_CHUYENNGANH" ManuallyRouted="false" />
+        <AssociationConnector Association="SCHOOLMANAGEMENTModel.FK_GIANGVIEN_CHUYENNGANH" ManuallyRouted="false" />
+        <AssociationConnector Association="SCHOOLMANAGEMENTModel.FK_SINHVIEN_CHUYENNGANH" ManuallyRouted="false" />
+        <AssociationConnector Association="SCHOOLMANAGEMENTModel.FK_CHUYENNGANH_MONHOC_MONHOC" ManuallyRouted="false" />
+        <AssociationConnector Association="SCHOOLMANAGEMENTModel.FK_CT_PHIEU_TD_PHIEUTHEODOI" ManuallyRouted="false" />
+        <AssociationConnector Association="SCHOOLMANAGEMENTModel.FK_CT_PHIEU_TD_TIEUCHI" ManuallyRouted="false" />
+        <AssociationConnector Association="SCHOOLMANAGEMENTModel.FK_DETAI_LOAIDT" ManuallyRouted="false" />
+        <AssociationConnector Association="SCHOOLMANAGEMENTModel.FK_PhieuGiaoDT_DETAI" ManuallyRouted="false" />
+        <AssociationConnector Association="SCHOOLMANAGEMENTModel.FK_GIANGVIEN_DONVI" ManuallyRouted="false" />
+        <AssociationConnector Association="SCHOOLMANAGEMENTModel.FK__PHIEU_CHAM__MAGV__267ABA7A" ManuallyRouted="false" />
+        <AssociationConnector Association="SCHOOLMANAGEMENTModel.FK__PhieuGiaoD__MAGV__25869641" ManuallyRouted="false" />
+        <AssociationConnector Association="SCHOOLMANAGEMENTModel.FK_GIANGVIEN_HOCVI" ManuallyRouted="false" />
+        <AssociationConnector Association="SCHOOLMANAGEMENTModel.FK_PCD_TIEUCHI_PHIEU_CHAM_DIEM" ManuallyRouted="false" />
+        <AssociationConnector Association="SCHOOLMANAGEMENTModel.FK_PCD_TIEUCHI_TIEUCHI" ManuallyRouted="false" />
+        <AssociationConnector Association="SCHOOLMANAGEMENTModel.FK_PHIEU_CHAM_DIEM_PhieuGiaoDT" ManuallyRouted="false" />
+        <AssociationConnector Association="SCHOOLMANAGEMENTModel.FK_PhieuGiaoDT_SINHVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="SCHOOLMANAGEMENTModel.FK_PHIEUTHEODOI_PhieuGiaoDT" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
